@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>LetzteChance.Org - Encypt DeCrypter Login v.1.0</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/core.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+    <div id="loginbox" class="lightbox2">
+        <div class="horizontal">
+            <div class="vertical">
+                <div class="box">
+                    <a href="index.html">Home</a><br>
+                    <input style="margin: 16px; text-align: center;" id="password" type="text" value="" placeholder="password" /> <br />
+
+                    <fieldset>
+                        <legend>Decrypted Text</legend>
+                        <textarea id="decryptedurl" cols="80" rows="2"></textarea>
+                    </fieldset>
+
+                    <button id="loginbutton" type="button">Enter</button>
+                    <p id="wrongPassword" style="display: none">wrong password</p>
+                    <fieldset>
+                        <legend>Out</legend>
+                        <textarea id="outcnt" cols="80" rows="2"></textarea>
+                        <div id="out"></div>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+    </script>
+
+    <!-- CryptoJS -->
+    <script src="js/CryptoJS/core.js"></script>
+    <script src="js/CryptoJS/x64-core.js"></script>
+    <script src="js/CryptoJS/enc-utf16.js"></script>
+    <script src="js/CryptoJS/enc-base64.js"></script>
+    <script src="js/CryptoJS/md5.js">
+    </script>
+    <script src="js/CryptoJS/sha1.js"></script>
+    <script src="js/CryptoJS/sha256.js"></script>
+    <script src="js/CryptoJS/sha512.js"></script>
+    <script src="js/CryptoJS/sha3.js"></script>
+    <script src="js/CryptoJS/hmac.js"></script>
+    <script src="js/CryptoJS/pbkdf2.js"></script>
+    <script src="js/CryptoJS/evpkdf.js"></script>
+    <script src="js/CryptoJS/cipher-core.js"></script>
+    <script src="js/CryptoJS/mode-cfb.js"></script>
+    <script src="js/CryptoJS/mode-ctr.js"></script>
+    <script src="js/CryptoJS/mode-ofb.js"></script>
+    <script src="js/CryptoJS/mode-ecb.js"></script>
+    <script src="js/CryptoJS/pad-ansix923.js"></script>
+    <script src="js/CryptoJS/pad-iso10126.js"></script>
+    <script src="js/CryptoJS/pad-zeropadding.js"></script>
+    <script src="js/CryptoJS/pad-iso97971.js"></script>
+    <script src="js/CryptoJS/pad-nopadding.js"></script>
+    <script src="js/CryptoJS/rc4.js"></script>
+    <script src="js/CryptoJS/rabbit.js"></script>
+    <script src="js/CryptoJS/aes.js"></script>
+    <script src="js/CryptoJS/tripledes.js"></script>
+    <!-- EOF CryptoJS -->
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

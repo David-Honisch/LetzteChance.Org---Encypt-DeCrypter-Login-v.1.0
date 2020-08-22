@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <title>LetzteChance.Org - Encypt DeCrypter Login v.1.0</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <script src="js/moment.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="css/core.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Crypt</title>
+
+    <body class="cm-1-navbar" id="bodycontent">
+
+        <input id="password" type="text" value="secret key 123">
+
+        <input type="button" value="Encrypt" onclick="$('#encrypt').val(Encrypt($('#password').val(), $('#decrypt').val()))">
+        <input type="button" value="Decrypt" onclick="$('#decrypt').val(Decrypt($('#password').val(),$('#encrypt').val()))">
+        <input type="button" value="Encrypt Base64" onclick="EncryptBase64()">
+        <a href="index.html?pwd=LetzteChance.Org-Encypt-DeCrypter-Login_v_.1.01a&url=U2FsdGVkX19Dt3rYad8F84jp6y4jqgk6JtUBCAbdivmwOLae5nYPXUX02Yd5xPUoZ2fgHOQa5iHcmx7uK9G3Xg==" target="_blank">test</a>
+        <br>
+        <fieldset>
+            <legend>Decrypt</legend>
+            <textarea id="decrypt" cols="80" rows="10">Sebastian</textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Encrypt</legend>
+            <textarea id="encrypt" cols="80" rows="10"></textarea>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Out</legend>
+            <textarea id="out" cols="80" rows="3"></textarea>
+
+        </fieldset>
+
+        <!-- CryptoJS -->
+        <script src="js/CryptoJS/core.js"></script>
+        <script src="js/CryptoJS/x64-core.js"></script>
+        <script src="js/CryptoJS/enc-utf16.js"></script>
+        <script src="js/CryptoJS/enc-base64.js"></script>
+        <script src="js/CryptoJS/md5.js">
+        </script>
+        <script src="js/CryptoJS/sha1.js"></script>
+        <script src="js/CryptoJS/sha256.js"></script>
+        <script src="js/CryptoJS/sha512.js"></script>
+        <script src="js/CryptoJS/sha3.js"></script>
+        <script src="js/CryptoJS/hmac.js"></script>
+        <script src="js/CryptoJS/pbkdf2.js"></script>
+        <script src="js/CryptoJS/evpkdf.js"></script>
+        <script src="js/CryptoJS/cipher-core.js"></script>
+        <script src="js/CryptoJS/mode-cfb.js"></script>
+        <script src="js/CryptoJS/mode-ctr.js"></script>
+        <script src="js/CryptoJS/mode-ofb.js"></script>
+        <script src="js/CryptoJS/mode-ecb.js"></script>
+        <script src="js/CryptoJS/pad-ansix923.js"></script>
+        <script src="js/CryptoJS/pad-iso10126.js"></script>
+        <script src="js/CryptoJS/pad-zeropadding.js"></script>
+        <script src="js/CryptoJS/pad-iso97971.js"></script>
+        <script src="js/CryptoJS/pad-nopadding.js"></script>
+        <script src="js/CryptoJS/rc4.js"></script>
+        <script src="js/CryptoJS/rabbit.js"></script>
+        <script src="js/CryptoJS/aes.js"></script>
+        <script src="js/CryptoJS/tripledes.js"></script>
+        <!-- EOF CryptoJS -->
+        <script src="js/jquery.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
